@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0a0a0a" />
+  <title>Close Friends da Mariana</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════
+       HERO — Foto + identidade principal
+       ═══════════════════════════════════════
+       ⚠️  A foto é carregada via CSS inline abaixo.
+       O nome do arquivo deve ser exatamente:
+       WhatsApp Image 2026-06-10 at 14.54.15.jpeg
+       e estar na RAIZ do repositório.
+  -->
+  <section class="hero" id="hero">
+
+    <!-- DIV de fundo — foto aplicada via style inline para garantir o caminho certo -->
+    <div class="hero__bg" id="heroBg"
+         style="background-image: url('WhatsApp%20Image%202026-06-10%20at%2014.54.15.jpeg');">
+    </div>
+
+    <!-- Gradiente escuro sobre a foto -->
+    <div class="hero__overlay"></div>
+
+    <!-- Conteúdo flutuante -->
+    <div class="hero__content">
+
+      <!-- Badge topo -->
+      <span class="badge">🔒 Acesso privado</span>
+
+      <!-- Nome + subtítulo -->
+      <div class="hero__identity">
+        <h1 class="hero__name">Mariana</h1>
+        <p class="hero__subtitle">Close Friends exclusivo</p>
+      </div>
+
+      <!-- Promessa curta -->
+      <p class="hero__promise">
+        Conteúdos privados, bastidores e atualizações que não aparecem no perfil aberto.
+      </p>
+
+      <!-- 🎁 BRINDE — 100 primeiros -->
+      <div class="bonus-badge">
+        <span class="bonus-icon">🎁</span>
+        <div>
+          <strong>Brinde para os 100 primeiros</strong>
+          <p>Vídeo exclusivo da Mariana direto no seu Instagram</p>
+        </div>
+      </div>
+
+      <!-- Preço -->
+      <div class="price-block">
+        <span class="price-label">apenas</span>
+        <span class="price-value">R$ 29,90</span>
+        <span class="price-period">/mês</span>
+      </div>
+
+      <!-- Botão principal -->
+      <!-- ⬇ link definido no script.js via CHECKOUT_URL -->
+      <a href="#" class="btn btn--primary" data-checkout>
+        Liberar acesso agora
+      </a>
+      <p class="microcopy">Pagamento seguro &nbsp;•&nbsp; Acesso após confirmação</p>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       BRINDE DESTAQUE — seção própria
+  ═══════════════════════════════════════ -->
+  <section class="section bonus-section">
+    <div class="bonus-card">
+      <div class="bonus-card__icon">🎁</div>
+      <div class="bonus-card__body">
+        <span class="bonus-card__label">Brinde exclusivo</span>
+        <h3 class="bonus-card__title">100 primeiros ganham vídeo da Mariana</h3>
+        <p class="bonus-card__text">
+          Quem assinar entre os primeiros 100 recebe um vídeo exclusivo da Mariana
+          enviado direto pelo Instagram. Não perca sua vaga.
+        </p>
+      </div>
+    </div>
+    <a href="#" class="btn btn--primary" data-checkout>
+      Garantir minha vaga agora
+    </a>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       BENEFÍCIOS — 3 cards
+  ═══════════════════════════════════════ -->
+  <section class="section benefits">
+    <div class="benefits__grid">
+      <div class="benefit-card">
+        <span class="benefit-icon">✦</span>
+        <p>Conteúdo exclusivo</p>
+      </div>
+      <div class="benefit-card">
+        <span class="benefit-icon">✦</span>
+        <p>Bastidores privados</p>
+      </div>
+      <div class="benefit-card">
+        <span class="benefit-icon">✦</span>
+        <p>Entrada no Close Friends</p>
+      </div>
+    </div>
+    <a href="#" class="btn btn--primary" data-checkout>
+      Quero entrar agora
+    </a>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       COMO FUNCIONA — 3 passos
+  ═══════════════════════════════════════ -->
+  <section class="section how">
+    <h2 class="section-title">Como funciona</h2>
+    <ol class="how__steps">
+      <li class="how__step">
+        <span class="step-num">01</span>
+        <div>
+          <strong>Pague com segurança</strong>
+          <p>Checkout protegido via Perfect Pay</p>
+        </div>
+      </li>
+      <li class="how__step">
+        <span class="step-num">02</span>
+        <div>
+          <strong>Receba as instruções</strong>
+          <p>Por e-mail ou WhatsApp logo após a confirmação</p>
+        </div>
+      </li>
+      <li class="how__step">
+        <span class="step-num">03</span>
+        <div>
+          <strong>Solicite o acesso</strong>
+          <p>Siga o passo a passo e entre no Close Friends</p>
+        </div>
+      </li>
+    </ol>
+    <a href="#" class="btn btn--primary" data-checkout>
+      Liberar acesso agora
+    </a>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       FAQ — 3 perguntas
+  ═══════════════════════════════════════ -->
+  <section class="section faq">
+    <h2 class="section-title">Dúvidas frequentes</h2>
+    <div class="faq__list">
+      <details class="faq__item">
+        <summary>Quando recebo o acesso?</summary>
+        <p>Logo após a confirmação do pagamento você recebe as instruções por e-mail.</p>
+      </details>
+      <details class="faq__item">
+        <summary>Como entro no Close Friends?</summary>
+        <p>Seguindo o passo a passo enviado após o pagamento — é simples e rápido.</p>
+      </details>
+      <details class="faq__item">
+        <summary>Posso cancelar quando quiser?</summary>
+        <p>Sim. Sem burocracia. Basta cancelar a assinatura a qualquer momento.</p>
+      </details>
+      <details class="faq__item">
+        <summary>Como recebo o vídeo brinde?</summary>
+        <p>Se você estiver entre os 100 primeiros, a Mariana te envia o vídeo direto pelo Instagram após confirmar sua assinatura.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       CTA FINAL
+  ═══════════════════════════════════════ -->
+  <section class="section cta-final">
+    <p class="cta-final__text">Pronta pra te receber dentro.</p>
+    <div class="price-block price-block--small">
+      <span class="price-value">R$ 29,90</span>
+      <span class="price-period">/mês</span>
+    </div>
+    <a href="#" class="btn btn--primary" data-checkout>
+      Liberar acesso agora
+    </a>
+    <p class="microcopy">Pagamento seguro via Perfect Pay</p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
